@@ -1,0 +1,31 @@
+{
+  "name": "pm2-mongo",
+  "version": "1.0.0",
+  "description": "PM2 MongoDB Module",
+  "main": "app.js",
+  "dependencies": {
+    "@pm2/io": "^5.0.0",
+    "mongodb": "latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bside-luke/pm2-mongo"
+  },
+  "config": {
+    "ip": "127.0.0.1",
+    "port": 27017,
+    "username": "",
+    "password": "",
+    "authDB": "",
+    "refresh_rate": 5000
+  },
+  "apps": [
+    {
+      "merge_logs": true,
+      "max_memory_restart": "200M",
+      "script": "app.js"
+    }
+  ],
+  "author": "LKD70",
+  "license": "MIT"
+}
