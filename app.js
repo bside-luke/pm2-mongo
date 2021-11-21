@@ -1,4 +1,4 @@
-const io = require('@pm2/io');
+const io = require('pmx');
 const stats = require('./lib/stats');
 
 const resolvePidPaths = (filepaths) => {
